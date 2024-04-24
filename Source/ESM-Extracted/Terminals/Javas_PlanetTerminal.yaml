@@ -1,0 +1,48 @@
+FormKey: 000802:Javas_PlanetTerminal.esm
+EditorID: Javas_PlanetTerminal
+VirtualMachineAdapter:
+  ScriptFragments:
+    Script:
+      Name: ''
+ObjectBounds:
+  First: -0.327148, -0.26195, -0.004575
+  Second: 0.327148, 0.279737, 1.749331
+ODTY: 0
+Components:
+- MutagenObjectType: AnimationGraphComponent
+  ANAM: AnimTextData\Tables\Graphs\HybridStateGraph01.agx
+  BNAM: setdressing\terminals\terminalactivatora01\characterassets\skeleton.rig
+  CNAM: setdressing\terminals\terminalactivatora01\animations
+Menu: 000801:Javas_PlanetTerminal.esm
+Background: Default
+Name:
+  TargetLanguage: English
+  Value: Planet Databank Computer
+Model:
+  File: terminals\javas_computer_planetdb.nif
+  FLLD: 0x01000000
+Keywords:
+- 0B799F:Starfield.esm
+- 12FD88:Starfield.esm
+- 1CC206:Starfield.esm
+- 21FE53:Starfield.esm
+PNAM: 0xCC4C3300
+FNAM: 0x0000
+JNAM: 0x6801
+MarkerFlags: 1342177280
+GNAM: 0x6801
+WorkbenchData: 0x00
+FurnitureTemplate: 1CD1CC:Starfield.esm
+MarkerModel: Markers\FurnitureMarkers\Furn_Human_Standing.nif
+MarkerParameters:
+- Offset: 0, -0.2, 0
+  EntryTypes:
+  - Front
+  - Behind
+  - Right
+  - Left
+  - Other
+  - 0x20
+  - 0x40
+  - 0x80
+  Unknown: 0xFFFFFFFFFFFFFF

@@ -1,0 +1,272 @@
+FormKey: 00080D:Javas_PlanetTerminal.esm
+EditorID: Quest_Survey_Planet_All
+FormVersion: 558
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MissionSurveyQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MissionIntValue01
+      Object: 38B93D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MissionParent
+      Object: 015300:Starfield.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: MissionType
+      Data: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlanetTarget
+      Object: 137578:Starfield.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerShip
+      Object: 137578:Starfield.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerStarSystemLocation
+      Object: 137578:Starfield.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PrimaryRef
+      Object: 137578:Starfield.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmountGlobal
+      Object: 137577:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmountGlobalActual
+      Object: 137576:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardXPAmountGlobalActual
+      Object: 16AB83:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_Parent
+      Object: 07092C:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetPlanetLocation
+      Object: 137578:Starfield.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetSystemLocation
+      Object: 137578:Starfield.esm
+      Alias: 8
+  Script:
+    Name: Fragments:Quests:QF_MB_SurveyPlanet04_LIST_00137578
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: Fragments:Quests:QF_MB_SurveyPlanet04_LIST_00137578
+    FragmentName: Fragment_Stage_0010_Item_00
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: Fragments:Quests:QF_MB_SurveyPlanet04_LIST_00137578
+    FragmentName: Fragment_Stage_0100_Item_00
+Name:
+  TargetLanguage: English
+  Value: Survey <Alias=TargetPlanetLocation> in <Alias=TargetSystemLocation>
+Data:
+  Flags:
+  - 0x80000
+  Priority: 15
+  Unused: 0x000000
+QuestType: 1E2D30:Starfield.esm
+Event: SCPT
+TextDisplayGlobals:
+- 38B93D:Starfield.esm
+UnusedConditions: []
+Stages:
+- Index: 5
+  Flags:
+  - RunOnStart
+  - 0x40
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+    Note: Run on Start Stage
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 10
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+    Note: Mission Accepted
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 100
+  Unknown: 116
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Note: Mission Complete
+    StageCompleteDatas:
+    - QSRD: 0x01000000
+      RewardDatas:
+      - XpAwarded: 16AB83:Starfield.esm
+        BonusCredits: 137576:Starfield.esm
+    - QSRD: '[]'
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Complete survey (<Global=MissionBoardSurvey04Current>%)
+  Targets:
+  - AliasID: 16
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x000000
+      Data:
+        MutagenObjectType: GetIsCurrentLocationAliasConditionData
+        RunOnType: PlayerShip
+        FirstParameter: 12
+Aliases:
+- MutagenObjectType: QuestLocationAlias
+  Name: PlayerStarSystemLocation
+  Flags:
+  - AllowReuseInQuest
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 00149F:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 10
+  Name: SurveySourceLocation
+  Flags:
+  - AllowReuseInQuest
+  - AllowReserved
+  - AllowCleared
+  - 0x40000000
+  ALFG: 0
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x143C33
+    Unknown2: 17630
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      FirstParameter: 070925:Starfield.esm
+    ComparisonValue: 1
+  ParentSystemLocationAliasID: -2
+  LocationTypeKeyword: 070928:Starfield.esm
+- MutagenObjectType: QuestReferenceAlias
+  ID: 3
+  Name: PrimaryRef
+  Flags:
+  - StoresText
+  ALFG: 0
+  Location:
+    AliasID: 10
+    RefType: 070925:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestLocationAlias
+  ID: 12
+  Name: TargetPlanetLocation
+  Flags:
+  - StoresText
+  ALFG: 0
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x143C33
+    Unknown2: 17630
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 18AA19:Starfield.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x143C33
+    Unknown2: 17630
+    Data:
+      MutagenObjectType: BodyHasKeywordConditionData
+      FirstParameter: 295EB4:Starfield.esm
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 8
+  Name: TargetSystemLocation
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - StoresText
+  - AllowReserved
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: 12
+  LocationTypeKeyword: 00149F:Starfield.esm
+- MutagenObjectType: QuestReferenceAlias
+  ID: 11
+  Name: PlayerShip
+  Flags:
+  - Optional
+  - ExternalAliasLinked
+  ALFG: 0
+  External:
+    Quest: 0174A2:Starfield.esm
+    AliasID: 16
+  VoiceTypes: Null
+- MutagenObjectType: QuestCollectionAlias
+  Collection:
+  - ID: 15
+    ALAM: 0
+    ReferenceAlias:
+      ID: 15
+      Name: PlanetOrbital
+      Flags:
+      - CreateRefTemp
+      ALFG: 0
+      CreateReferenceToObject:
+        Object: 212179:Starfield.esm
+        AliasID: 12
+      VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 16
+  Name: PlanetTarget
+  Flags: []
+  ALFG: 0
+  ReferenceCollectionAliasID: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 16628
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      FirstParameter: 212148:Starfield.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+MissionTypeKeyword: 1E266E:Starfield.esm
+MissionBoardDescription:
+  TargetLanguage: English
+  Value: >-
+    League of Independent Settlers Contract
+
+    <Alias=TargetPlanetLocation> in <Alias=TargetSystemLocation> is reported to have potential for life. We're looking for an experienced explorer to survey it for us.
+
+    Payment will be automatically credited to your account once <Alias=TargetPlanetLocation> has been fully surveyed.
+MissionBoardInfoPanels:
+- Header:
+    TargetLanguage: English
+    Value: Target Planet
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=TargetPlanetLocation>
+- Header:
+    TargetLanguage: English
+    Value: Target System
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=TargetSystemLocation>
+- Header:
+    TargetLanguage: English
+    Value: ''
+- Header:
+    TargetLanguage: English
+    Value: ''
+- Header:
+    TargetLanguage: English
+    Value: ''
+- Header:
+    TargetLanguage: English
+    Value: ''
+Keywords:
+- 1A6C4A:Starfield.esm
+- 1E266E:Starfield.esm

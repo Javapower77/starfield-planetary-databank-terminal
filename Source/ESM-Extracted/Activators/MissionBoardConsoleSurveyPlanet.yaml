@@ -1,0 +1,35 @@
+FormKey: 00080A:Javas_PlanetTerminal.esm
+EditorID: MissionBoardConsoleSurveyPlanet
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MissionBoardActivatorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MB_Parent
+      Object: 015300:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MissionBoardFilterKeyword
+      Object: 1E266E:Starfield.esm
+ObjectBounds:
+  First: -0.327148, -0.26195, -0.004575
+  Second: 0.327148, 0.279737, 1.75014
+ODTY: 0
+Components:
+- MutagenObjectType: AnimationGraphComponent
+  ANAM: AnimTextData\Tables\Graphs\HybridStateGraph01.agx
+  BNAM: genericbehaviors\animtemplates\animhelper_60\characterassets\skeleton.rig
+  CNAM: genericbehaviors\animtemplates\animhelper_60\animations
+Name:
+  TargetLanguage: English
+  Value: Mission Board - Planet Survey
+Model:
+  File: SetDressing\Mission_Board_Terminals\Mission_Board_Terminals_Gen.nif
+  FLLD: 0x01000000
+MarkerColor: '#00CC4C33'
+LoopingSound:
+  Start: 27a844b9-1226-995b-a1b6-7e2dd34e44ab
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: Use
+Flags: []
+ActivationAngle: 360

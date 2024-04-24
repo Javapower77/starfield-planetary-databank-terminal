@@ -1,0 +1,15 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.18.0
+ModKey: Javas_PlanetTerminal.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  Stats:
+    NumRecords: 25
+    NextFormID: 2066
+  Author: ''
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm

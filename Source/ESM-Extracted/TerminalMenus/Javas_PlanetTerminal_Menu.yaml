@@ -1,0 +1,63 @@
+FormKey: 000801:Javas_PlanetTerminal.esm
+EditorID: Javas_PlanetTerminal_Menu
+FormVersion: 558
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Javas_PlanetDBTerminalScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerUnityTimesEntered
+      Object: 219529:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StoryManagerEventKeyword
+      Object: 000811:Javas_PlanetTerminal.esm
+Name:
+  TargetLanguage: English
+  Value: Planet Databank Terminal
+TMVT: 0x01000000
+DNAM: 0x01
+SNAM: 0x01000000
+INAM:
+  TargetLanguage: English
+  Value: ''
+BodyTexts:
+- Text:
+    TargetLanguage: English
+    Value: >-
+      HELLO <Alias=Player>
+
+
+      Welcome to Planet Databank Console.
+
+
+      :: Please, select an option.
+MenuItems:
+- ItemText:
+    TargetLanguage: English
+    Value: Planetary Information
+  ItemShortText:
+    TargetLanguage: English
+    Value: ''
+  ISET: 0x0100ABAB08000000
+  Submenu: 000800:Javas_PlanetTerminal.esm
+- ItemText:
+    TargetLanguage: English
+    Value: Survey Planet Traits
+  ItemShortText:
+    TargetLanguage: English
+    Value: ''
+  ISET: 0x0100000008000000
+  ItemId: 1
+  Submenu: 000804:Javas_PlanetTerminal.esm
+- ItemText:
+    TargetLanguage: English
+    Value: Download Planet Survey Slate
+  ItemShortText:
+    TargetLanguage: English
+    Value: ''
+  ISET: 0x0100000008000000
+  ItemId: 2
+  Submenu: 000806:Javas_PlanetTerminal.esm

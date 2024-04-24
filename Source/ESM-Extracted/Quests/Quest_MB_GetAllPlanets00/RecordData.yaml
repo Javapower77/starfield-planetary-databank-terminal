@@ -1,0 +1,598 @@
+FormKey: 000808:Javas_PlanetTerminal.esm
+EditorID: Quest_MB_GetAllPlanets00
+FormVersion: 558
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MissionGetAllPlanetsScript
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: AllPlanets
+      Objects:
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 1
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 9
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 10
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 11
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 12
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 13
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 14
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 15
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 16
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 17
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 18
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 19
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 20
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 21
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 22
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 23
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 24
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 25
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 26
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 27
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 28
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 29
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 30
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 31
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 32
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 33
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 34
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 35
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 36
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 37
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 38
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 39
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 40
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 41
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 42
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 43
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 44
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 45
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 46
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 47
+      - Name: ''
+        Object: 38B5E9:Starfield.esm
+        Alias: 48
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_Parent
+      Object: 07092C:Starfield.esm
+  Versioning:
+  - Break0
+  ExtraBindDataVersion: 0
+  Script:
+    Name: ''
+Data:
+  Unused: 0x000000
+Event: SCPT
+SourceQuest: 09917F:Starfield.esm
+UnusedConditions: []
+Aliases:
+- MutagenObjectType: QuestLocationAlias
+  ID: 1
+  Name: Planet00
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 9
+  Name: Planet01
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 10
+  Name: Planet02
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 11
+  Name: Planet03
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 12
+  Name: Planet04
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 13
+  Name: Planet05
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 14
+  Name: Planet06
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 15
+  Name: Planet07
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 16
+  Name: Planet08
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 17
+  Name: Planet09
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 18
+  Name: Planet10
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 19
+  Name: Planet11
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 20
+  Name: Planet12
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 21
+  Name: Planet13
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 22
+  Name: Planet14
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 23
+  Name: Planet15
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 24
+  Name: Planet16
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 25
+  Name: Planet17
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 26
+  Name: Planet18
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 27
+  Name: Planet19
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 28
+  Name: Planet20
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 29
+  Name: Planet21
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 30
+  Name: Planet22
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 31
+  Name: Planet23
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 32
+  Name: Planet24
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 33
+  Name: Planet25
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 34
+  Name: Planet26
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 35
+  Name: Planet27
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 36
+  Name: Planet28
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 37
+  Name: Planet29
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 38
+  Name: Planet30
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 39
+  Name: Planet31
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 40
+  Name: Planet32
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 41
+  Name: Planet33
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 42
+  Name: Planet34
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 43
+  Name: Planet35
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 44
+  Name: Planet36
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 45
+  Name: Planet37
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 46
+  Name: Planet38
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 47
+  Name: Planet39
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 48
+  Name: Planet40
+  Flags:
+  - Optional
+  - AllowReserved
+  - AllowCleared
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: -2
+  LocationTypeKeyword: 070A54:Starfield.esm

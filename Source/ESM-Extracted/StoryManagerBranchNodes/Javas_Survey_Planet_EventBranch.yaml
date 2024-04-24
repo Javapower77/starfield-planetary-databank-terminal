@@ -1,0 +1,12 @@
+FormKey: 000810:Javas_PlanetTerminal.esm
+EditorID: Javas_Survey_Planet_EventBranch
+Parent: 203D52:Starfield.esm
+PreviousSibling: 187427:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Member: Keyword1
+    Record: 000811:Javas_PlanetTerminal.esm
+  ComparisonValue: 1

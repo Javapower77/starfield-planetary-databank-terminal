@@ -1,0 +1,64 @@
+FormKey: 000800:Javas_PlanetTerminal.esm
+EditorID: Javas_PlanetTerminal_SubMenu_01
+FormVersion: 558
+VirtualMachineAdapter:
+  ScriptFragments:
+    Script:
+      Name: ''
+Name:
+  TargetLanguage: English
+  Value: Planetary Information
+TMVT: 0x01000000
+DNAM: 0x01
+SNAM: 0x01000000
+INAM:
+  TargetLanguage: English
+  Value: ''
+BodyTexts:
+- Text:
+    TargetLanguage: English
+    Value: >-
+      Planetary Information
+
+      Survey Planet Traits
+
+      Download Planet Survey Slate
+
+
+      Planet Information:
+
+      Name: <0.Name>
+
+      Type: <1.Name>
+
+
+      Survey So Far: <2>%
+
+      Traits: <3>
+
+      Flora: <4>
+
+      Fauna: <5>
+
+
+      Additional Information:
+
+      Atmosphere Type: <6.Name>
+
+      Day Lenght: <7>
+
+      Gravitity: <8>
+
+      Pressure: <9>
+
+      Temperature: <10>
+  UseTemplatedText: False
+MenuItems:
+- ItemText:
+    TargetLanguage: English
+    Value: Back to Main Menu
+  ItemShortText:
+    TargetLanguage: English
+    Value: ''
+  ISET: 0x0100000000000000
+  Submenu: 000801:Javas_PlanetTerminal.esm

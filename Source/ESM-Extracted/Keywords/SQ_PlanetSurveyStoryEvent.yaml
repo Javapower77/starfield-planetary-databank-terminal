@@ -1,0 +1,6 @@
+FormKey: 000811:Javas_PlanetTerminal.esm
+EditorID: SQ_PlanetSurveyStoryEvent
+Color: '#00FFFFFF'
+Notes: Start the trigger quest to call the survey planet quest
+Type: None
+FNAM: 0x00000000

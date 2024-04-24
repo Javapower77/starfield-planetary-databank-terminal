@@ -1,0 +1,17 @@
+FormKey: 000803:Javas_PlanetTerminal.esm
+EditorID: co_Outpost_Javas_Terminal_PlanetDB
+Description:
+  TargetLanguage: English
+  Value: ''
+WorkbenchKeyword: 06D72D:Starfield.esm
+CreatedObject: 000802:Javas_PlanetTerminal.esm
+AmountProduced: 1
+MenuSortOrder: 9
+PickupSound:
+  Start: 6fc34a8d-24d7-3c81-b048-5c52818b5795
+DropdownSound:
+  Start: fe1e4313-39b4-a16b-ecfd-52002e4d4e83
+LearnMethod: DefaultOrConditions
+Categories:
+- 06D72D:Starfield.esm
+RECF: 0

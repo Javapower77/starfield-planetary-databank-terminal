@@ -1,0 +1,331 @@
+FormKey: 00080C:Javas_PlanetTerminal.esm
+EditorID: Quest_Survey_Planet
+FormVersion: 558
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MissionQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MissionParent
+      Object: 015300:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerShip
+      Object: 3303A5:Starfield.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerStarSystemLocation
+      Object: 3303A5:Starfield.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PrimaryRef
+      Object: 3303A5:Starfield.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmountGlobal
+      Object: 001EDE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmountGlobalActual
+      Object: 3303A0:Starfield.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ShutdownOnFailure
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetLocation
+      Object: 3303A5:Starfield.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetPlanetLocation
+      Object: 3303A5:Starfield.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetSystemLocation
+      Object: 3303A5:Starfield.esm
+      Alias: 8
+  Script:
+    Name: Fragments:Quests:QF_MB_Bounty05_UC_003303A5
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: Fragments:Quests:QF_MB_Bounty05_UC_003303A5
+    FragmentName: Fragment_Stage_0010_Item_00
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: Fragments:Quests:QF_MB_Bounty05_UC_003303A5
+    FragmentName: Fragment_Stage_0100_Item_00
+  - Stage: 100
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: Fragments:Quests:QF_MB_Bounty05_UC_003303A5
+    FragmentName: Fragment_Stage_0100_Item_01
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 3303A5:Starfield.esm
+      Alias: 3
+    Scripts:
+    - Name: DefaultAliasOnDeath
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 100
+  - Property:
+      Name: ''
+      Object: 3303A5:Starfield.esm
+      Alias: 11
+    Scripts:
+    - Name: DefaultAliasMapMarkerScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: MapMarkerCategory
+      - MutagenObjectType: ScriptIntProperty
+        Name: UndiscoveredVisibility
+Name:
+  TargetLanguage: English
+  Value: Kill the <Alias=PrimaryRef> on <Alias=TargetPlanetLocation>
+Data:
+  Flags:
+  - 0x80000
+  Priority: 15
+  Unused: 0x000000
+QuestType: 1E2D30:Starfield.esm
+QuestFaction: 0546DC:Starfield.esm
+Event: SCPT
+TextDisplayGlobals:
+- 3303A0:Starfield.esm
+UnusedConditions: []
+Stages:
+- Index: 5
+  Flags:
+  - 0x40
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+    Note: Ready stage
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 10
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+    Note: Mission Accepted
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 100
+  Unknown: 116
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x554C4C
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        FirstParameter: 3303A5:Starfield.esm
+        SecondParameter: 10
+      ComparisonValue: 1
+    Note: Mission Complete
+    StageCompleteDatas:
+    - QSRD: 0x01000000
+      RewardDatas:
+      - XpAwarded: Null
+        BonusCredits: 3303A0:Starfield.esm
+    - QSRD: '[]'
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x000000
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        FirstParameter: 3303A5:Starfield.esm
+        SecondParameter: 10
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 200
+  Unknown: 171
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Note: Mission Failed
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect the bounty on the <Alias=PrimaryRef> at the <Alias=TargetLocation>
+  Targets:
+  - AliasID: 3
+Aliases:
+- MutagenObjectType: QuestLocationAlias
+  ID: 12
+  Name: EventLocation
+  Flags:
+  - AllowReuseInQuest
+  - AllowReserved
+  - AllowCleared
+  ALFG: 0
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- MutagenObjectType: QuestLocationAlias
+  Name: PlayerStarSystemLocation
+  Flags:
+  - AllowReuseInQuest
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: 12
+  LocationTypeKeyword: 00149F:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 5
+  Name: TargetLocation
+  Flags:
+  - StoresText
+  - IsCompanion
+  ALFG: 0
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x040000
+    Unknown2: 17630
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      FirstParameter: 003956:Starfield.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x040000
+    Unknown2: 17630
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 023305:Starfield.esm
+    ComparisonValue: 1
+  ALPS:
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x040000
+      Unknown2: 17630
+      Data:
+        MutagenObjectType: IsInSameCurrentLocationAsRefConditionData
+        FirstParameter: 000014:Starfield.esm
+        SecondParameter: 00149F:Starfield.esm
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x040000
+      Unknown2: 17630
+      Data:
+        MutagenObjectType: SystemHasKeywordConditionData
+        FirstParameter: 061990:Starfield.esm
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x040000
+      Unknown2: 17630
+      Data:
+        MutagenObjectType: BodyHasKeywordConditionData
+        FirstParameter: 062F2F:Starfield.esm
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x040000
+      Unknown2: 17630
+      Data:
+        MutagenObjectType: IsTrueForConditionFormConditionData
+        FirstParameter: 19B983:Starfield.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Unknown1: 0x040000
+      Unknown2: 17630
+      Data:
+        MutagenObjectType: IsTrueForConditionFormConditionData
+        FirstParameter: 028FBB:Starfield.esm
+      ComparisonValue: 1
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestReferenceAlias
+  ID: 3
+  Name: PrimaryRef
+  Flags:
+  - StoresText
+  ALFG: 0
+  Location:
+    AliasID: 5
+    RefType: 003956:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 11
+  Name: MapMarker
+  Flags:
+  - AllowDisabled
+  ALFG: 0
+  Location:
+    AliasID: 5
+    RefType: 02271F:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestLocationAlias
+  ID: 8
+  Name: TargetSystemLocation
+  Flags:
+  - StoresText
+  - 0x20000000
+  ALFG: 0
+  SystemLocationAliasID: 3
+  LocationTypeKeyword: 00149F:Starfield.esm
+- MutagenObjectType: QuestLocationAlias
+  ID: 2
+  Name: TargetPlanetLocation
+  Flags:
+  - StoresText
+  - 0x40000000
+  ALFG: 0
+  ParentSystemLocationAliasID: 3
+  LocationTypeKeyword: 070A54:Starfield.esm
+- MutagenObjectType: QuestReferenceAlias
+  ID: 9
+  Name: PlayerShip
+  Flags:
+  - Optional
+  - ExternalAliasLinked
+  ALFG: 0
+  External:
+    Quest: 0174A2:Starfield.esm
+    AliasID: 16
+  VoiceTypes: Null
+MissionTypeKeyword: 1E2671:Starfield.esm
+MissionBoardDescription:
+  TargetLanguage: English
+  Value: >-
+    United Colonies SysDef
+
+    We are offering a reward for anyone who eliminates the leader of a notorious group of Crimson Fleet Pirates, last seen at the <Alias=TargetLocation> on <Alias=TargetPlanetLocation> in the <Alias=TargetSystemLocation> system.
+MissionBoardInfoPanels:
+- Header:
+    TargetLanguage: English
+    Value: Target Location
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=TargetLocation>
+- Header:
+    TargetLanguage: English
+    Value: Target
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=PrimaryRef>
+- Header:
+    TargetLanguage: English
+    Value: Target Planet
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=TargetPlanetLocation>
+- Header:
+    TargetLanguage: English
+    Value: Target System
+  Line1:
+    TargetLanguage: English
+    Value: <Alias=TargetSystemLocation>
+- Header:
+    TargetLanguage: English
+    Value: ''
+- Header:
+    TargetLanguage: English
+    Value: ''
+Keywords:
+- 1E2671:Starfield.esm
+- 3303A3:Starfield.esm

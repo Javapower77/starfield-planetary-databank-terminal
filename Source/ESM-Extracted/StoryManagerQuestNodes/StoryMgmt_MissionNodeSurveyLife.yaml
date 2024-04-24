@@ -1,0 +1,12 @@
+FormKey: 00080E:Javas_PlanetTerminal.esm
+EditorID: StoryMgmt_MissionNodeSurveyLife
+FormVersion: 558
+Parent: 2516EB:Starfield.esm
+PreviousSibling: Null
+Flags:
+- Random
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 1
+Quests:
+- Quest: 00080D:Javas_PlanetTerminal.esm
